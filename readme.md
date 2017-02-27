@@ -5,6 +5,8 @@ react, Redux, Javascript ES6
 
 Latest version of node. (Use NVM)
 
+nvm install node (for lastest version)
+
 Install yarn: `npm install -g yarn`
 
 ### Setup
