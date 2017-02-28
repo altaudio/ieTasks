@@ -13,5 +13,5 @@ class PersonWithProps extends React.Component {
 	}
 } 
 
-export default () => <PersonWithProps name={""} age = {""} /> 
+export default () => <PersonWithProps /> 
  

@@ -6,8 +6,8 @@ class HelloKitty extends React.Component {
 	render () {
 		return (
 			<div>
-			  {<Hello />}
-			  {<Kitty />}
+			  <Hello />
+			  <Kitty />
 			</div>
 
 			)

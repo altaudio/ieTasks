@@ -21,7 +21,7 @@ export default () => {
       <Person />
 
       <p>Question 5 Answer</p>
-      <PersonWithProps name={"John"} age={"20"} />
+      <PersonWithProps name={'John'} age={'20'} />
 
 
     </div>
