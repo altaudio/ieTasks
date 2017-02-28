@@ -9,6 +9,6 @@ class Kitty extends React.Component {
 
 
 
-export default () => <Kitty />
+export default Kitty
 
  

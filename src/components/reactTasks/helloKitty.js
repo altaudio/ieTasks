@@ -14,4 +14,4 @@ class HelloKitty extends React.Component {
 	}
 } 
 
-export default () => <HelloKitty />
+export default HelloKitty
