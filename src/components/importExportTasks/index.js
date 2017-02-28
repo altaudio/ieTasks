@@ -5,9 +5,8 @@ import catNames from 'cat-names'
 import banana from './banana.js'
 import {apple} from './apple.js'
 import adder from './myFunctions.js'
-import fruitMessage from './fruits.js'
-import {apples, bananas} from './fruits.js'
-import {applePie, blueberryPie, pieMenu} from './pies'
+import fruitMessage, {apples, bananas} from './fruits.js'
+import pieMenu, {applePie, blueberryPie} from './pies'
 
 
 console.log(`Question 1 is a ${banana}`);
