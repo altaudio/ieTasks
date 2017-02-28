@@ -1,5 +1,6 @@
 import React from 'react' //ignore this
 import catNames from 'cat-names'
+import request from 'superagent'
 
 // Answers go here!
 import banana from './banana.js'
@@ -20,6 +21,9 @@ console.log(applePie);
 console.log(blueberryPie);
 
 console.log(`Question 6 A nice cat name is ${catNames.random()}`);
+
+
+
 
 
 // Ignore this!
