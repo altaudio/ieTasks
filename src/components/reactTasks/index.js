@@ -13,6 +13,8 @@ import Company from './company'
 import Button from './button'
 import Text from './text'
 import BigButton from './bigButton'
+import RandomNumberGenerator from './randNumGen'
+import NextName from './nextName'
 
 export default () => {
   return (
@@ -65,6 +67,12 @@ export default () => {
 
       <h4>Question 14 Answer</h4>
       <BigButton onPress={() => console.log('Hello World')}>Press Me!</BigButton>
+
+      <h4>Question 14 Answer</h4>
+      <RandomNumberGenerator />
+
+      <h4>Question 15 Answer</h4>
+      <NextName names={['john','richard']} />
 
 
      
