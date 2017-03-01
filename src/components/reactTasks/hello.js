@@ -1,6 +1,6 @@
 import React from 'react'
 
-
+/*
 class Hello extends React.Component {
 	render () {
 		return (<p>Hello</p>);
@@ -10,4 +10,6 @@ class Hello extends React.Component {
 
 
 export default Hello
+*/
 
+export default () => <p>Hello</p> 

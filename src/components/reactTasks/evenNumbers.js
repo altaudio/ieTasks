@@ -6,11 +6,12 @@ class EvenNumbers extends React.Component {
 		return (
 			<div>
 			  <ul>
-			    {_.map(this.props.numbers, (number) => {
-			    	if((number % 2) == 0) {
-			    		return <li>{number}</li>
-			    	}
-			    })}
+			    {_.map(_.filter(this.props.numbers, (number) => { 
+			    		return ((number % 2) == 0);
+			    		
+			    }), (number) => {
+			    	return <li>{number}</li>;
+			    } ) }
 			  </ul>
 			</div>
 

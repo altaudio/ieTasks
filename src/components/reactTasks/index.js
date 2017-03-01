@@ -11,6 +11,8 @@ import BoldEvenNumbers from './boldEvenNumbers'
 import PersonObject from './personObject'
 import Company from './company'
 import Button from './button'
+import Text from './text'
+import BigButton from './bigButton'
 
 export default () => {
   return (
@@ -52,15 +54,17 @@ export default () => {
       employees={
       	[{name: "John", age: 20},
       	{name: "Rich", age: 27}]
-      }
+      } personComponent={<PersonObject />}
       />
 
       <h4>Question 12 Answer</h4>
+      <Text style={{color : "pink"}}>Hello There!</Text>
 
       <h4>Question 13 Answer</h4>
       <Button />
 
       <h4>Question 14 Answer</h4>
+      <BigButton onPress={() => console.log('Hello World')}>Press Me!</BigButton>
 
 
      

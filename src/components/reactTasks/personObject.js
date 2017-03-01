@@ -1,6 +1,7 @@
 import React from 'react'
 
 
+
 class PersonObject extends React.Component {
 	render () {
 		return (

@@ -1,4 +1,5 @@
 import React from 'react'
+import PersonObject from './personObject'
 
 class Company extends React.Component {
 	render () {
@@ -8,10 +9,7 @@ class Company extends React.Component {
 
 			  {_.map(this.props.employees, (value) => {
 			  	return (
-			  	       <div>
-			  	         <p>Name: {value.name}</p> 
-			  	         <p>Age: {value.age}</p>
-			  	       </div>
+			  	       <PersonObject person={{name: value.name, age: value.age}} />
 			  	       )
 			  })}
 			</div>
