@@ -5,7 +5,6 @@ class NamesList extends React.Component {
 	constructor () {
 		super ()
 		this.state = {names : ['Richard'], name: ' '}
-		this.handleChange = this.handleChange.bind(this);
 	}
 
 	render () {
@@ -16,7 +15,7 @@ class NamesList extends React.Component {
 			    	return <li>{name}</li>;
 			    })}
 
-			    <input id={'nameInput'} onChange={this.handleChange}></input>
+			    <input id={'nameInput'} onChange={(value) => this.handleChange(value)}></input>
 
 			    <button onClick={() => this.addName()}>Add Name</button>
 
@@ -28,8 +27,6 @@ class NamesList extends React.Component {
 
 	handleChange (input) {
 		this.setState({name : input.target.value});
-		console.log(this.state.name);
-
 	}
 
 	addName () {
