@@ -14,9 +14,9 @@ import Button from './button'
 import Text from './text'
 import BigButton from './bigButton'
 import RandomNumberGenerator from './randNumGen'
-import NextName from './nextName'
 import BoxGrower from './boxGrower'
 import NamesList from './namesList'
+import NextName from './nextName2'
 
 export default () => {
   return (
