@@ -4,7 +4,7 @@ import React from 'react'
 class NamesList extends React.Component {
 	constructor () {
 		super ()
-		this.state = {names : ['Richard'], name: ' ', input : ' '}
+		this.state = {names : ['Richard'], name: ' '}
 	}
 
 	render () {
@@ -15,7 +15,7 @@ class NamesList extends React.Component {
 			    	return <li>{name}</li>;
 			    })}
 
-			    <input id={'nameInput'} onChange={(value) => this.handleChange(value)}></input>
+			    <input id={'nameInput'} onChange={(value) => this.handleChange(value)} value={this.state.name}></input>
 
 			    <button onClick={() => this.addName()}>Add Name</button>
 
@@ -27,17 +27,12 @@ class NamesList extends React.Component {
 
 	handleChange (input) {
 
-		input.persist();
 		this.setState({name : input.target.value});
-		this.setState({input : input});
-
 	}
 
 	addName () {
 		this.setState({names : [...this.state.names , this.state.name]});
-		(this.state.input).target.value = ' ';
-		// document.getElementById('nameInput').value=' ';
-
+		this.state.name = ' ';
 	}
 } 
 
