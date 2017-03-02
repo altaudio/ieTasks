@@ -4,7 +4,7 @@ import React from 'react'
 class NamesList extends React.Component {
 	constructor () {
 		super ()
-		this.state = {names : ['Richard'], name: ' ', inputPath : ' '}
+		this.state = {names : ['Richard'], name: ' ', input : ' '}
 	}
 
 	render () {
@@ -26,7 +26,7 @@ class NamesList extends React.Component {
 	}
 
 	handleChange (input) {
-		
+
 		input.persist();
 		this.setState({name : input.target.value});
 		this.setState({input : input});
@@ -35,7 +35,7 @@ class NamesList extends React.Component {
 
 	addName () {
 		this.setState({names : [...this.state.names , this.state.name]});
-		(this.state.inputPath).target.value = ' ';
+		(this.state.input).target.value = ' ';
 		// document.getElementById('nameInput').value=' ';
 
 	}
