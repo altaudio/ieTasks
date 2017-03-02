@@ -3,7 +3,7 @@ import React from 'react'
 class BoxGrower extends React.Component {
 	constructor () {
 		super ()
-		this.state = {divHeight : '100px'}
+		this.state = {divHeight : 100}
 	}
 
 	render () {
@@ -18,7 +18,7 @@ class BoxGrower extends React.Component {
 	}
 
 	growBox () {
-		this.setState({divHeight : '120px'});
+		this.setState({divHeight : this.state.divHeight + 20});
 	}
 
 } 
