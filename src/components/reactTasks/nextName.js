@@ -13,15 +13,12 @@ class NextName extends React.Component {
 		return (
 			<div>
 			  <p>{this.props.names[this.state.index]}</p>
-			  <button onClick={this.incrementIndex.bind(this)}>Next</button>
+			  <button onClick={() => this.incrementIndex()}>Next</button>
 			</div>
 			)
 	}
 
-	incrementIndex (e) {
-
-		//prevent browser default
-		e.preventDefault;
+	incrementIndex () {
 
 		//If state index is less than length of the array then increment index
 		if (this.state.index < (this.props.names.length - 1)) {

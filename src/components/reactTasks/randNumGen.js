@@ -10,13 +10,12 @@ class RandomNumberGenerator extends React.Component {
 		return (
 			<div>
 			  <p>{this.state.randNum}</p>
-			  <button onClick={this.generateNumber.bind(this)}>Generate</button>
+			  <button onClick={() => this.generateNumber()}>Generate</button>
 			</div>
 			)
 	}
 
-	generateNumber (e) {
-		e.preventDefault;
+	generateNumber () {
 		this.setState({randNum : _.random(0, 10000)});
 
 	}
